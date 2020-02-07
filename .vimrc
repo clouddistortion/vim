@@ -6,7 +6,7 @@
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
 " (if you aren't using one of those fonts, you will see funny characters here. 
 " Turst me, they look nice when using one of those fonts).
-let fancy_symbols_enabled = 0
+let fancy_symbols_enabled = 1
 
 
 set encoding=utf-8
@@ -428,24 +428,55 @@ let g:airline#extensions#whitespace#enabled = 0
 
 " Fancy Symbols!!
 
-if fancy_symbols_enabled
-    let g:webdevicons_enable = 1
+" if fancy_symbols_enabled
+"     let g:webdevicons_enable = 1
+" 
+"     " custom airline symbols
+"     if !exists('g:airline_symbols')
+"        let g:airline_symbols = {}
+"     endif
+"     let g:airline_left_sep = ''
+"     let g:airline_left_alt_sep = ''
+"     let g:airline_right_sep = ''
+"     let g:airline_right_alt_sep = ''
+"     "let g:airline_symbols.branch = '⭠'
+"     
+"     let g:airline_symbols.branch = 'ᚠ'
+"     let g:airline_symbols.readonly = '⭤'
+"     "let g:airline_symbols.linenr = '⭡'
+"     let g:airline_symbols.linenr ='Ξ'
+" else
+"     let g:webdevicons_enable = 0
+" endif
+ " air-line
+ let g:airline_powerline_fonts = 1
+ 
+ if !exists('g:airline_symbols')
+     let g:airline_symbols = {}
+ endif
+ 
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
 
-    " custom airline symbols
-    if !exists('g:airline_symbols')
-       let g:airline_symbols = {}
-    endif
-    let g:airline_left_sep = ''
-    let g:airline_left_alt_sep = ''
-    let g:airline_right_sep = ''
-    let g:airline_right_alt_sep = ''
-    let g:airline_symbols.branch = '⭠'
-    let g:airline_symbols.readonly = '⭤'
-    let g:airline_symbols.linenr = '⭡'
-else
-    let g:webdevicons_enable = 0
-endif
-
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 " Custom configurations ----------------
 
 " Include user's custom nvim configurations
@@ -464,3 +495,6 @@ autocmd BufEnter * silent! lcd %:p:h
 " Show Hidden Files
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store$', '\.git$'] " ignore files in nerd tree
+
+
+
