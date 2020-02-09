@@ -24,8 +24,12 @@ sudo apt-get install fonts-powerline
 - see https://github.com/tpope/vim-fugitive
 - `Gblame` show commits and annotations
 - `Gstatus` show git status
-- `
 
+## Comments (using https://github.com/preservim/nerdcommenter)
+- " " + c + " ": Toggle comment
+- " " + cc : Comment
+- " " + cn : Nested comments 
+    
 ## Line Commands
 *Move line*
   :m 12 	move current line to after line 12

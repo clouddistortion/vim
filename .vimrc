@@ -60,7 +60,9 @@ endif
 
 " Now the actual plugins:
 
-" Override configs by directory
+" Override configs by directory, project directories can contain .vim.custom
+" files which change the configuration depending on the directory for vim
+" https://github.com/arielrossanigo/dir-configs-override.vim 
 Plug 'arielrossanigo/dir-configs-override.vim'
 " Code commenter
 Plug 'scrooloose/nerdcommenter'
@@ -163,6 +165,7 @@ endif
 " You can edit them as you wish
  
 if using_vim
+    let mapleader = " "
     " A bunch of things that are set by default in neovim, but not in vim
 
     " no vi-compatible
