@@ -17,6 +17,9 @@ sudo apt-get install fonts-powerline
 1. https://github.com/powerline/fonts
 2. https://vi.stackexchange.com/questions/3359/how-do-i-fix-the-status-bar-symbols-in-the-airline-plugin
 
+## ZSH and Powerlevel
+- https://gist.github.com/kevin-smets/8568070
+
 ## GIT
 - see https://github.com/tpope/vim-fugitive
 - `Gblame` show commits and annotations
