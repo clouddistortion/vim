@@ -7,7 +7,8 @@ sudo pip3 install pynvim flake8 pylint isort
 
 sudo apt-get install fonts-powerline
 ```
-
+## File Creation
+- :NERDTree + m : Menu in NERDTree for creating subnodes
 ## Nerd Fonts
 1. Download https://www.nerdfonts.com/font-downloads hermit hermut
 2. Unzip and copy to ~/.fonts or ~/.local/share/fonts
