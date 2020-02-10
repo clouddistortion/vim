@@ -9,6 +9,7 @@ sudo apt-get install fonts-powerline
 ```
 ## File Creation
 - :NERDTree + m : Menu in NERDTree for creating subnodes
+
 ## Nerd Fonts
 1. Download https://www.nerdfonts.com/font-downloads hermit hermut
 2. Unzip and copy to ~/.fonts or ~/.local/share/fonts
@@ -20,6 +21,15 @@ sudo apt-get install fonts-powerline
 
 ## ZSH and Powerlevel
 - https://gist.github.com/kevin-smets/8568070
+
+## Rename Variable
+- `gd`+ `c`+ `gn` (new name) `ESC` --> . (next) or :%norm . (all)
+
+## Jump
+- `CTRL-O`  : jump back
+- `CTRL-I`  : jump forward
+- `,d`      : jump to method definition
+-
 
 ## GIT
 - see https://github.com/tpope/vim-fugitive
@@ -34,6 +44,19 @@ sudo apt-get install fonts-powerline
 ## Line Commands
 *Move line*
   :m 12 	move current line to after line 12
+
+### Move lines
+### Normal mode
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+ 
+### Insert mode
+inoremap <C-j> <ESC>:m .+1<CR>==gi
+inoremap <C-k> <ESC>:m .-2<CR>==gi
+ 
+### Visual mode
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
 
 `yy` copy line
 
