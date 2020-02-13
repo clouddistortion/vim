@@ -6,9 +6,13 @@ sudo apt install git curl python3-pip exuberant-ctags ack-grep
 sudo pip3 install pynvim flake8 pylint isort
 
 sudo apt-get install fonts-powerline
+pip3 install yapf
 ```
 ## File Creation
 - :NERDTree + m : Menu in NERDTree for creating subnodes
+
+## Format
+`F3` Autoformat
 
 ## Nerd Fonts
 1. Download https://www.nerdfonts.com/font-downloads hermit hermut

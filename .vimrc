@@ -136,7 +136,8 @@ Plug 'neomake/neomake'
 Plug 'myusuf3/numbers.vim'
 " Nice icons in the file explorer and file type status line.
 Plug 'ryanoasis/vim-devicons'
-
+" Autoformat
+Plug 'Chiel92/vim-autoformat'
 if using_vim
     " Consoles as buffers (neovim has its own consoles as buffers)
     Plug 'rosenfeld/conque-term'
@@ -499,5 +500,24 @@ autocmd BufEnter * silent! lcd %:p:h
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store$', '\.git$'] " ignore files in nerd tree
 
+" vim-autoformat
+let g:formatters_python = ['yapf']
+noremap <F3> :Autoformat<CR>
 
+" Move lines
+" Normal mode
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+
+" Insert mode
+inoremap <C-j> <ESC>:m .+1<CR>==gi
+inoremap <C-k> <ESC>:m .-2<CR>==gi
+
+" Visual mode
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" Autoformat
+let g:formatters_python = ['yapf']
+noremap <F3> :Autoformat<CR>
 
