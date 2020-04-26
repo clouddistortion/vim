@@ -40,6 +40,9 @@ pip3 install yapf
 - `Gblame` show commits and annotations
 - `Gstatus` show git status
 
+## Autocomplete (e.g. Go)
+`Ctrl + X Ctrl + O`
+
 ## Comments (using https://github.com/preservim/nerdcommenter)
 - " " + c + " ": Toggle comment
 - " " + cc : Comment

@@ -138,6 +138,8 @@ Plug 'myusuf3/numbers.vim'
 Plug 'ryanoasis/vim-devicons'
 " Autoformat
 Plug 'Chiel92/vim-autoformat'
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 if using_vim
     " Consoles as buffers (neovim has its own consoles as buffers)
     Plug 'rosenfeld/conque-term'
@@ -521,3 +523,41 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 let g:formatters_python = ['yapf']
 noremap <F3> :Autoformat<CR>
 
+
+" Go additions
+"set autowrite
+"let g:go_fmt_command = "goimports"
+"let g:go_addtags_transform = "camelcase"
+"let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+"let g:go_metalinter_autosave = 1
+"let g:go_auto_type_info = 1
+"set updatetime=100
+
+let g:tagbar_type_go = {
+	\ 'ctagstype' : 'go',
+	\ 'kinds'     : [
+		\ 'p:package',
+		\ 'i:imports:1',
+		\ 'c:constants',
+		\ 'v:variables',
+		\ 't:types',
+		\ 'n:interfaces',
+		\ 'w:fields',
+		\ 'e:embedded',
+		\ 'm:methods',
+		\ 'r:constructor',
+		\ 'f:functions'
+	\ ],
+	\ 'sro' : '.',
+	\ 'kind2scope' : {
+		\ 't' : 'ctype',
+		\ 'n' : 'ntype'
+	\ },
+	\ 'scope2kind' : {
+		\ 'ctype' : 't',
+		\ 'ntype' : 'n'
+	\ },
+	\ 'ctagsbin'  : 'gotags',
+	\ 'ctagsargs' : '-sort -silent'
+\ }
+nmap <F8> :TagbarToggle<CR>
