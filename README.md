@@ -43,6 +43,9 @@ pip3 install yapf
 ## Autocomplete (e.g. Go)
 `Ctrl + X Ctrl + O`
 
+## Go code outline
+`<F8>`
+
 ## Comments (using https://github.com/preservim/nerdcommenter)
 - " " + c + " ": Toggle comment
 - " " + cc : Comment
