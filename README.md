@@ -9,6 +9,7 @@ sudo apt-get install fonts-powerline
 pip3 install yapf
 ```
 ## File Creation
+- :edit ~/projects/main.go
 - :NERDTree + m : Menu in NERDTree for creating subnodes
 
 ## Format
@@ -40,10 +41,15 @@ pip3 install yapf
 - `Gblame` show commits and annotations
 - `Gstatus` show git status
 
-## Autocomplete (e.g. Go)
+## Go
+### Go (execute)
+- `<Space> r` :GoRun
+- `<Space> b` :GoBuild
+
+### Autocomplete (e.g. Go)
 `Ctrl + X Ctrl + O`
 
-## Go code outline
+### Go code outline
 `<F8>`
 
 ## Comments (using https://github.com/preservim/nerdcommenter)
