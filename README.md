@@ -49,8 +49,13 @@ pip3 install yapf
 ### Autocomplete (e.g. Go)
 `Ctrl + X Ctrl + O`
 
+### Go Documentation
+`:GoDoc` #resize with :resize 20
+`:GoDocBrowser` #jump to documentation in browser
+
 ### Go code outline
 `<F8>`
+`:GoDef` or `gd` go to the definition of a e.g. method (back ctrl-o)
 
 ## Comments (using https://github.com/preservim/nerdcommenter)
 - " " + c + " ": Toggle comment
