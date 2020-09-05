@@ -94,3 +94,5 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 ## NERDTree
 - `cd` selected branch used as workdir
 - `C`  selected branch as root NERDTree dir
+- `F6` toggle NERDTree
+- `,t` select current file in NERDTree
