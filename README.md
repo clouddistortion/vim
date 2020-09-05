@@ -8,6 +8,15 @@ sudo pip3 install pynvim flake8 pylint isort
 sudo apt-get install fonts-powerline
 pip3 install yapf
 ```
+
+## Fancy Fonts Install
+* Download https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf
+* e.g. on Manjaro
+** mkdir -p ~/.local/share/fonts/ 
+** cp Hurmit Medium Nerd Font Complete.otf to fonts folder
+** run fc-cache
+
+
 ## File Creation
 - :edit ~/projects/main.go
 - :NERDTree + m : Menu in NERDTree for creating subnodes
