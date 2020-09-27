@@ -139,6 +139,9 @@ Plug 'ryanoasis/vim-devicons'
 " Autoformat
 Plug 'Chiel92/vim-autoformat'
 
+" Quickly open files via CTRL-P as described on https://www.mattlayman.com/blog/2019/supercharging-vim-navigate-files-instantly/
+Plug 'ctrlpvim/ctrlp.vim'
+
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 if using_vim
     " Consoles as buffers (neovim has its own consoles as buffers)
