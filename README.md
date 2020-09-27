@@ -24,6 +24,9 @@ pip3 install yapf
 ## Format
 `F3` Autoformat
 
+## Search File
+`CTRL-P` for ripgrep search
+
 ## Terminal or Commands
 * `:! <command> [Enter]` run a command 
 * `<CTRL>-Z (do stuff in the terminal 'fg' to go back`
