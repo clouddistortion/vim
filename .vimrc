@@ -166,6 +166,11 @@ if vim_plug_just_installed
     :PlugInstall
 endif
 
+" Use ripgrep rg with ctrlp
+if executable('rg')
+  let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob ""'
+endif
+
 " ============================================================================
 " Vim settings and mappings
 " You can edit them as you wish
